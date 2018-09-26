@@ -1,0 +1,119 @@
+
+#box-transicao{
+	width: 100px;
+	height: 600px;
+	background: black;
+
+}
+
+
+#box-transicao:hover{
+	width: 400px;
+	/*background: black;*/
+	transition: background 3s, width 1s; /*all para todas*/
+	background: orange;
+}
+#box-transicao botoes-menu:hover {
+	color: orange;
+	transition: all;
+}	
+
+#menu{
+	color: red;
+}
+
+.exibe {
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: opacity 0.5s linear;
+	-moz-transition: opacity 0.5s linear;
+	-o-transition: opacity 0.5s linear;
+	transition: opacity 0.5s linear;
+}	
+/*.grow:hover
+{
+	-webkit-transform: scale(1.5);
+	-ms-transform: scale(1.5);
+	transform: scale(1.5);
+
+
+	}*/
+	.grow {
+		/*display: inline-block;*/
+		/*vertical-align: middle;*/
+		/*-webkit-transform: translateZ(0);*/
+		/*transform: translateZ(0);*/
+		/*-webkit-transform: scale(1);*/
+		transform: scale(1);
+		/*box-shadow: 0 0 1px rgba(0, 0, 0, 0);*/
+		/*-webkit-backface-visibility: hidden;*/
+		/*backface-visibility: hidden;*/
+		/*-moz-osx-font-smoothing: grayscale;*/
+		-webkit-transition-duration: 0.3s;
+		/*	transition-duration: 0.3s;*/
+		-webkit-transition-property: transform;
+		transition-property: transform;
+
+	}
+	.grow:hover, .grow:focus, .grow:active {
+		-webkit-transform: scale(1.5);
+		transform: scale(1.5);
+		position: relative;
+		z-index:1;
+	}
+
+
+	.modo:hover .exibe {
+		visibility: visible;
+		opacity: 1;
+		position: absolute;
+		color: red;
+	}
+
+	.descricao {
+		opacity: 0;
+		visibility: hidden;
+		-webkit-transition: opacity 0.5s linear;
+		-moz-transition: opacity 0.5s linear;
+		-o-transition: opacity 0.5s linear;
+		transition: opacity 0.5s linear;
+	}
+	.item:hover .descricao {
+		visibility: visible;
+		opacity: 1;
+	}
+	.modo{
+		border: 1px solid;
+	}
+	.show-image{
+		border: 1px solid;
+	}
+
+
+	div.show-image {
+		position: relative;
+		float:left;
+		margin:5px;
+
+	}
+	div.show-image:hover img{
+		opacity:0.7;
+		-webkit-transition-duration: 0.3s;
+		border: 3px solid;
+	}
+	div.show-image:hover input {
+		display: block;
+	}
+	div.show-image input {
+		position:absolute;
+		display:none;
+	}
+	
+	div.show-image input.update {
+		top:45%;
+		left:0;
+	}
+	div.show-image input.add {
+		top:45%;
+		right:0%;
+	}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Pagina Inicial</title>
+
+  <!-- Bootstrap -->
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="estiloBootstrap.css" rel="stylesheet">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!-- Estilo Customizado -->
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+  </head>
+  <body>
+
+    <!-- Barra Navegação-->
+    <!--navbar-fixed-top-->
+    <nav class="navbar navbar-light" style="background-color: #e3f2fd;" >
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" 
+          data-toggle="collapse" data-target="#barra-navegacao">
+
+          <span class="sr-only">Alternar Menu</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="#" class="navbar-brand">LOGO</a>
+
+      </div>
+
+      <div class="collapse navbar-collapse" id="barra-navegacao">
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><input class="form-control mr-sm-2" type="search"></li>
+          <li><button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button></li>
+          <li><a href="#">Minha Lista</a>  </li>
+          <li><a href="#">Assistidos</a>  </li>
+
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="img/icone.jpg"> <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu"> 
+              <li><a href="#">Editar</a>  </li>
+              <li><a href="#">Logout</a>  </li>
+            </ul>
+          </li>
+        </ul>  
+
+      </div>
+
+    </div>
+
+  </nav>
+
+  <div class="container">
+
+
+
+    <div class="page-header">
+
+
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="modo">
+            <a href="https://www.globo.com"><img src="img/uvas200.png" class="grow">
+              <div class="exibe"> icone </div>
+            </a> 
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="show-image">
+            <img src="img/uvas200.png" > 
+            <img src="img/add-icon.png" class="add" id="mais">
+            <input class="update" type="button" value="Update" />
+            <input class="delete" type="button" value="Delete" />
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="modo">
+            <a href="https://www.globo.com"><img src="img/uvas200.png" class="grow">
+              <div class="exibe"> icone </div>
+            </a> 
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+
+    <h2>Hover on the Image to see the Buttons</h2>
+    <div class="show-image">
+      <img src="img/uvas200.png" />
+      <input class="update" type="button" value="Update" />
+
+      <input class="delete" type="button" value="Delete" />
+    </div>
+
+    <div class="item"> 
+      <a href="">Ver mais</a>
+      <div class="descricao">Este filme é excelente! Recomendado a todas as idades</div>
+    </div>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+  </body>
+  </html>
