@@ -1,8 +1,10 @@
 var imagem = document.querySelector('#imagem')
 var titulo = document.querySelector('#titulo')
 var sinopse = document.querySelector('#sinopse')
-
-
+var linkImagem = 'https://image.tmdb.org/t/p/w300_and_h450_bestv2/'
+var codImagem;
+var idMovie;
+var imagemFundo;
 
 chamaApi('https://api.themoviedb.org/3/trending/movie/week?api_key=6521859e8b7c918bfaba021cfddac551&language=pt-BR');
 
@@ -24,23 +26,25 @@ function chamaApi (url){
 
 			for(let i = 0; i < resposta.results.length; i++){
 				/*htmlFilmes = resposta.results[i].title + "<br/>"*/
+				codImagem = linkImagem+resposta.results[i].poster_path;
+				idMovie = resposta.results[i].id;
+				imagemFundo = linkImagem+resposta.results[i].backdrop_path;
 				conteudoFilm(resposta.results[i].title, resposta.results[i].overview);
+				
 			}
 
-
-			/*let conteudoHtml = funcao(resposta);
-			divFilmes.innerHTML = conteudoHtml;*/
 		}
 	}
 
 }
 
-
+//<img src="+imagemFundo+">
 function conteudoFilm (title, overview){
-	var filmeNovo = "<div class='row'> <div class='col-md-2' id='imagem'>" + "<img src='imagens/hanSolo.jpg'>" +	"</div>" + 
-	"<div class='col-md-10'>" + "<h3 'id= 'filme'>" + title + "</h3>" +
+	var filmeNovo = "<div class='row'> <div class='col-md-4'>" + 
+	"<div id=imagem> <img src="+codImagem+"></div> </div>" + 
+	"<div class='col-md-8'>" + "<h3 'id= 'filme'>" + title + "</h3>" +
 	"<p' 'id='sinopse'>" + overview +	"</p>"		
-	"</div></div>" ;
+	"</div> </div>" ;
 
 	var linha = document.querySelector("#novoFilmeLinha")
 	var conteudoExistente = linha.innerHTML
@@ -50,38 +54,17 @@ function conteudoFilm (title, overview){
 }
 
 
-/*
-function conteudoFilm(resposta){
 
-	let htmlFilmes = "";
-	for(let i = 0; i < resposta.results.length; i++){
-		htmlFilmes = resposta.results[i].title + "<br/>"
-		
-	}
-	return htmlFilmes;
-};
-
-
-
-
-function conteudoSinopse(resposta){
-
-
-	let htmlFilmes = "";
-	for(let i = 0; i < resposta.results.length; i++){
-		htmlFilmes = resposta.results[i].overview + "<br/>"
-
-	}
-	return htmlFilmes;
-};		
 
 /*
-function conteudoImagem(resposta){
 
-	let htmlFilmes = "";
-	for(let i = 0; i < resposta.results.length; i++){
-		htmlFilmes = resposta.results[i].title + "<br/>"
-	}
-	return htmlFilmes;
-};
-*/
+Tópicos Programação II:
+AWT e Swing 
+Gerenciadores de Layout
+Componentes do Swing
+Herança, Polimorfismo, Sobrecarga, Sobreposição, Encapsulamento
+Eventos
+Analise de códigos
+Classes, atributos e métodos
+
+*/ 

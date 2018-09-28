@@ -5,19 +5,19 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="icon" href="imagens/favicon.png">  
+	<!--<link rel="icon" href="imagens/favicon.png">  -->
 	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<link href="estilo.css" rel="stylesheet">
 
 
-	<title>Nova Lista de filmes</title>
+	<title>Filmes da Semana</title>
 </head>
 <body>
 	<nav class="navbar navbar-fixed-top navbar-inverse navbar-transparente">
 		<div class="container">
 
 			<div class="navbar-header">
-
+				
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barra-navegacao">
 					<span class="sr-only">alternar navegação</span>
 					<span class="icon-bar"></span>            
@@ -26,50 +26,44 @@
 				</button>
 
 				<a href="index.html" class="navbar-brand">
-					<span class="img-logo">Filmes </span>
+					<span class="img-logo"></span>
 				</a>
 
 			</div>  
 			<!-- navbar -->
 			<div class="collapse navbar-collapse" id="barra-navegacao">
-				<ul class="nav navbar-nav navbar-right">
-					<li> <a href="">Premium</a></li>
-					<li> <a href="">Ajuda</a></li>
-					<li> <a href="">Baixar</a></li>
+				<ul class="nav navbar-nav navbar-left">
+					<li> <a href="">Explorar</a></li>
+					<li> <a href="">Minha Lista</a></li>
+					<li> <a href="">X</a></li>
 					<li class="divisor" role=separator> </li>
-					<li> <a href="">Inscrever-se</a></li>
-					<li> <a href="">Entrar</a></li>
+					<li> <a href="">X</a></li>
+					<li> <a href="">X</a></li>
 				</ul>
 			</div>
 		</div> <!-- /container -->
 	</nav> <!-- FIM/nav -->
 
-	<section class="main_content" id="filmes">
-		<h2> Lista de Filmes</h2>
-		<div class= "resultados">
-			<div class="row"> 
-
-				<div class="row filmes">
-					<div class="col-md-4" id="imagemFilme">
-						<img src="imagens/hanSolo.jpg">	
-					</div>
-					<div class="col-md-4" id="exibeFilmes">
-
-					</div>	
-					<div class="col-md-4" id="sinopse"> 
-
-					</div>	
-				</div>
-				
-				
-
+	<div class="container">
+		
+		<div class= "row" id=novoFilmeLinha >
+			<div class="col-md-4" id="imagem">
+			</div>
+			<div class="col-md-8">
+				<h3 id="filme"></h3>
+				<p id="sinopse"></p>		
 			</div>
 		</div>
-	</section>
+		
+		
+	</div>
 	
 	
 
-	<script src="js/main.js"></script>
+	<script src="js/mainExemplo.js"></script>
 
 </body>
 </html>
+
+
+

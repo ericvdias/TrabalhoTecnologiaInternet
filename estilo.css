@@ -7,9 +7,9 @@ html, body, .capa{
 }
 
 body{
-	background: url('imagens/capa.png'),
-	url('imagens/ruido.png'),
-	linear-gradient(50deg,#ff4169,#7c26fB);
+	background: url('imagens/uvas.png'),
+	url('imagens/uvas.png'),
+	linear-gradient(50deg,white,black);
 	background-attachment: fixed;	
 	font-family: Helvetica,Arial,sans-serif;
 	overflow-x: hidden;	/*remove barra de rolagem*/		
@@ -20,7 +20,7 @@ body{
 	height: 40px;
 	width: 132px;
 	display: block;
-	background: url('imagens/spotify.svg') no-repeat;
+	background: url('img/uvas.png') no-repeat;
 	background-size: contain;
 	color: transparent;
 }
@@ -131,6 +131,7 @@ footer{
 }
 /*=================tipografia========================*/
 
+
 h1{
 	font-size: 100px;
 	font-weight: 900;
@@ -144,7 +145,8 @@ h2{
 	letter-spacing: -0.04em;
 }
 
-h3{
+h3{	
+	color: white;
 	font-size: 35px;
 	font-weight: 700;
 	letter-spacing: -0.04em;
@@ -163,4 +165,17 @@ h3{
 
 #recursos h3{
 	color: #9bf0e1;
+}
+
+.row{
+	color: white;
+	padding: 20px 0px 20px 0px;	
+	
+}
+
+.container{
+	/*background: url('img/uvas.png')*/
+}
+#imagem{
+	transition: background 0.4s, color 0.4s;
 }
