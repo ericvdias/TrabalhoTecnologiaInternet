@@ -117,3 +117,9 @@
 		top:45%;
 		right:0%;
 	}
+
+	div.show-image:hover img {
+		opacity: 0.7;
+		-webkit-transition-duration: 0.3s;
+
+	}
