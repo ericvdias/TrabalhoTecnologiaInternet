@@ -31,19 +31,22 @@
 	</nav>
 
 
-	
-	<div class="container">
-		<section class="search"> 
-			<input type="text" name="busca" placeholder="Buscar">
-		</section>
+
+	<div class="container" >
+		<div class="clearfix">
+			<input type="text" id="filmeBusca" placeholder="Buscar" class="form-control form-control-lg" style="border: 1px solid red">
+			<div class="nav navbar-nav" > 
+				<button type="button" id="buscaFilmes" class="btn btn-danger" onclick='chamaFilme()'> Pesquisar</button>
+			</div>
+		</div>
 	</div>
 
 	<div class="container" >
 		
 
-		<div class="row1" id="row1">
+		<div class="row" id="row">
 
-			<div class="col-md-6" id="posicao1">
+			<div class="col-md-6" id="posicao1" >
 
 			</div>
 			
@@ -56,13 +59,13 @@
 
 	</div>
 	<script src="js/mainExemploTeste.js"></script>
-
+	
 </body>
 </html>
 
 <!--
 	
 	<div class="container" id=novoFilmeLinha>
-
+<script src="js/BuscaFilmes.js"></script>
 	</div>
 -->
