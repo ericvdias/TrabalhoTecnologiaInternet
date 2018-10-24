@@ -10,7 +10,7 @@
 	<link href="estilo.css" rel="stylesheet">
 
 
-	<title>TestesWWWWWWW - Filmes da Semana</title>
+	<title>Testes - Filmes da Semana</title>
 </head>
 
 <body>
@@ -31,19 +31,17 @@
 	</nav>
 
 
-
-	<div class="container" >
-		<div class="clearfix">
-			<input type="text" id="filmeBusca" placeholder="Buscar" class="form-control form-control-lg" style="border: 1px solid red">
+	<div class="container">
+		<form class="form-inline">
 			<div class="nav navbar-nav" > 
-				<button type="button" id="buscaFilmes" class="btn btn-danger" onclick='chamaFilme()'> Pesquisar</button>
+				<input type="text" id="filmeBusca" placeholder="Buscar" class="form-control form-control-lg" style="border: 1px solid red">
+				<button type="button" id="buscaFilmes" class="btn btn-danger" onclick="buscaFilme()"> Pesquisar</button>
 			</div>
-		</div>
+		</form>
 	</div>
 
 	<div class="container" >
 		
-
 		<div class="row" id="row">
 
 			<div class="col-md-6" id="posicao1" >
@@ -54,7 +52,6 @@
 				
 			</div>
 
-
 		</div>
 
 	</div>
@@ -62,10 +59,3 @@
 	
 </body>
 </html>
-
-<!--
-	
-	<div class="container" id=novoFilmeLinha>
-<script src="js/BuscaFilmes.js"></script>
-	</div>
--->
