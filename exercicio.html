@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Local Storage</title>
+</head>
+<body>
+
+	<form>
+		<input type="text" id="input">
+		<button type="button" id="botao" onclick="addLocalStorage()"> Incluir </button>
+		<button type="button" id="botao" onclick="deleteLocalStorage()"> Limpar </button>
+	</form>
+
+	<script type="text/javascript">
+		var conteudos = [] 
+
+		function addLocalStorage(){
+
+			var inputBotao = document.querySelector("#input").value;
+			var salvos = localStorage.getItem('nome');
+
+			conteudos.push(inputBotao)
+
+			localStorage.setItem('nome', JSON.stringify(conteudos))
+		}
+
+		function deleteLocalStorage(){
+			localStorage.setItem('nome',"")
+		}
+
+	</script>
+</body>
+</html>
